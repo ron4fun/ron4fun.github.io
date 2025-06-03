@@ -7,7 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="description" content="Web Engineer" />
     <meta name="keywords" content="portfolio, Web Development, Programming" />
-    <title>Welcome </title>
+    <meta name="author" content="Ronald Mbadiwe" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#121212" />
+    <meta property="og:title" content="Ronald Mbadiwe | Web Engineer Portfolio" />
+    <meta property="og:description" content="Portfolio of Ronald Mbadiwe, Web Engineer and Software Developer." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-portfolio-url.com/" />
+    <meta property="og:image" content="https://your-portfolio-url.com/assets/avater.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ronald Mbadiwe | Web Engineer Portfolio" />
+    <meta name="twitter:description" content="Portfolio of Ronald Mbadiwe, Web Engineer and Software Developer." />
+    <meta name="twitter:image" content="https://your-portfolio-url.com/assets/avater.png" />
+    <title>Ronald's Portfolio</title>
+    <link rel="icon" href="assets/Favicon.svg" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
 
@@ -21,36 +34,34 @@
 </head>
 
 <body>
-
     <header>
-        <nav class="navbar">
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+            <img src="assets/logo.png" alt="Ronald Mbadiwe Logo" class="logo" aria-label="Ronald Mbadiwe Logo">
 
-            <img src="assets/logo.png" alt="logo" class="logo">
 
+            <ul class="sidebar" aria-label="Mobile Navigation">
 
-            <ul class="sidebar">
-
-                <li class="close" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                <li class="close" onclick=hideSidebar(event)><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                             height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffff">
                             <path
                                 d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
                         </svg></a></li>
 
-                <li><a href="#Home">Home</a></li>
+                <li><a onclick=hideSidebar() href="index.html">Home</a></li>
 
-                <li><a href="#About">About</a></li>
+                <li><a onclick=hideSidebar() href="#About">About</a></li>
 
-                <li><a href="#Stacks">Stacks</a></li>
+                <li><a onclick=hideSidebar() href="#Stacks">Stacks</a></li>
 
-                <li><a href="#Projects">Projects</a></li>
+                <li><a onclick=hideSidebar() href="#Projects">Projects</a></li>
 
-                <li><a href="#Contact">Contact</a></li>
+                <li><a onclick=hideSidebar() href="#Contact">Contact</a></li>
             </ul>
 
 
 
-            <ul class="nav-links">
-                <li class="hideOnMobile"><a href="#Home">Home</a></li>
+            <ul class="nav-links" aria-label="Desktop Navigation">
+                <li class="hideOnMobile"><a href="#">Home</a></li>
 
                 <li class="hideOnMobile"><a href="#About">About</a></li>
 
@@ -60,7 +71,7 @@
 
                 <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
 
-                <li class=" menu hideOnBigScreen" onclick="showSidebar()"><a href="#"><svg
+                <li class=" menu hideOnBigScreen" onclick="showSidebar(event)"><a href="#"><svg
                             xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
                             fill="#ffff">
                             <path
@@ -73,7 +84,7 @@
 
     </header>
 
-    <main>
+    <main role="main">
 
 
 
@@ -89,7 +100,7 @@
 
                 <a class="btn" href="#Contact">Contact Me</a>
 
-                <a class="btn" href="#Contact">Download CV</a>
+                <a class="btn" href="assets/Ronald Resume.pdf">Download CV</a>
 
 
 
@@ -98,7 +109,7 @@
 
 
             <div class="hero-avater">
-                <img src="assets/avater.png" alt="Avater">
+                <img src="assets/avater.png" alt="Ronald Mbadiwe Avatar" aria-label="Ronald Mbadiwe Avatar">
             </div>
 
         </section>
@@ -106,14 +117,23 @@
 
         <section class="about" id="About">
             <h2 class="section-title">About Me</h2>
-            <p>Engineer and self-taught software developer with a strong foundation in backend development,
-                cryptographic
-                libraries, and open-source contributions. I enjoy building practical, high-impact tools and exploring
-                how
-                code
-                can solve real-world problems. With a background in mechanical engineering and a deep interest in core
-                computing concepts, I’m now focused on expanding my knowledge in areas like algorithms, systems
-                architecture, and AI, while contributing to meaningful and technically challenging work.</p>
+            <p>
+                <strong>Engineer</strong> and <strong>self-taught software developer</strong> with a passion for
+                <strong>backend development</strong>, <strong>cryptography</strong>, and <strong>open-source
+                    innovation</strong>. I thrive on building <strong>practical, high-impact tools</strong> that solve
+                real-world problems and push the boundaries of what’s possible. My journey began in <strong>mechanical
+                    engineering</strong>, but my curiosity led me deep into the world of <strong>algorithms</strong>,
+                <strong>systems architecture</strong>, and <strong>artificial intelligence</strong>.
+                <br><br>
+                I’m driven by a relentless desire to <strong>learn</strong>, <strong>create</strong>, and
+                <strong>contribute</strong> to projects that matter. Whether it’s architecting robust backend systems,
+                contributing to cutting-edge <strong>open-source libraries</strong>, or exploring the latest in
+                <strong>AI</strong> and <strong>core computing concepts</strong>, I bring energy, creativity, and a
+                problem-solving mindset to every challenge.
+                <br><br>
+                If you’re looking for someone who combines <strong>engineering discipline</strong> with <strong>software
+                    craftsmanship</strong> and a dash of bold ambition, let’s connect and build something extraordinary!
+            </p>
 
             <a class="btn" href="#Contact">Contact Me</a>
 
@@ -230,9 +250,9 @@
 
                 <div class="project-item">
 
-                    <div class="img-card">
-                        <img class="project-image" src="assets/project.png" alt="Project 1" />
-                    </div>
+                    <!-- <div class="img-card">
+                        <img class="project-image" src="assets/SharpHash-02.jpg" alt="SharpHash" />
+                    </div> -->
 
                     <h3>SharpHash</h3>
                     <p>SharpHash is a C# hashing library which provides an easy to use interface for computing hashes
@@ -240,13 +260,22 @@
                         also supports state based (incremental) hashing.
                     </p>
 
-                    <div class="view-project">
-                        <a class="project-link" href="#">View Project</a>
+                    <div class="tags">
+                        <ul>
+                            <li>c#</li>
+                            <li>library</li>
 
-                        <a href="#" class="viewgit">
+                        </ul>
+                    </div>
+
+                    <div class="view-project">
+                        <a class="project-link" target="_blank" href="https://github.com/ron4fun/SharpHash">View
+                            Project</a>
+
+                        <!-- <a href="https://github.com/ron4fun/SharpHash" target="_blank" class="viewgit">
                             <p>view on github</p>
                             <img src="assets/github.svg" alt="github" class="github">
-                        </a>
+                        </a> -->
 
                     </div>
 
@@ -256,22 +285,32 @@
 
                 <div class="project-item">
 
-                    <div class="img-card">
-                        <img class="project-image" src="assets/project.png" alt="Project 1" />
-                    </div>
+                    <!-- <div class="img-card">
+                        <img class="project-image" src="assets/hashLibPlus-01.jpg" alt="HashLibPlus" />
+                    </div> -->
 
                     <h3>HashLibPlus</h3>
                     <p>This is a recommended C++11 hashing library that provides a fluent interface for computing hashes
                         and checksums
                         of strings, files, streams, bytearrays and untyped data to mention but a few.</p>
 
-                    <div class="view-project">
-                        <a class="project-link" href="#">View Project</a>
+                    <div class="tags">
+                        <ul>
+                            <li>c++</li>
+                            <li>hashing</li>
+                            <li>md5</li>
 
-                        <a href="#" class="viewgit">
+                        </ul>
+                    </div>
+
+                    <div class="view-project">
+                        <a class="project-link" target="_blank" href="https://github.com/ron4fun/HashLibPlus">View
+                            Project</a>
+
+                        <!-- <a href="https://github.com/ron4fun/HashLibPlus" target="_blank" class="viewgit">
                             <p>view on github</p>
                             <img src="assets/github.svg" alt="github" class="github">
-                        </a>
+                        </a> -->
 
                     </div>
 
@@ -282,9 +321,9 @@
 
                 <div class="project-item">
 
-                    <div class="img-card">
-                        <img class="project-image" src="assets/Jobbernaija.jpg" alt="Project 1" />
-                    </div>
+                    <!-- <div class="img-card">
+                        <img class="project-image" src="assets/Jobbernaija.jpg" alt="Jobbernaija" />
+                    </div> -->
 
 
                     <h3>job board website</h3>
@@ -292,12 +331,22 @@
                         authentication, job posting, search functionality, and an intuitive interface for both employers
                         and job seekers.</p>
 
+                    <div class="tags">
+                        <ul>
+                            <li>Html</li>
+                            <li>Css</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </div>
+
                     <div class="view-project">
-                        <a class="project-link" href="#">View Project</a>
-                        <a href="#" class="viewgit">
+                        <a class="project-link" target="_blank" href="https://jobbernaija.com/">View Project</a>
+
+
+                        <!-- <a onclick="notOnGit(event)" href="#" class="viewgit">
                             <p>view on github</p>
                             <img src="assets/github.svg" alt="github" class="github">
-                        </a>
+                        </a> -->
 
                     </div>
 
@@ -306,21 +355,30 @@
 
 
                 <div class="project-item">
-
+                    <!-- 
                     <div class="img-card">
-                        <img class="project-image" src="assets/project.png" alt="Project 1" />
+                        <img class="project-image" src="assets/pattern_finder.jpg" alt="Pattern finder" />
+                    </div> -->
+
+
+                    <h3>Pattern Finder</h3>
+                    <p>A compact library used for signature matching and/or wildcard pattern finder in byte streams.</p>
+
+                    <div class="tags">
+                        <ul>
+                            <li>dart</li>
+                            <li>bytecode</li>
+                            <li>pattern matching</li>
+                        </ul>
                     </div>
 
-
-                    <h3>Project Title 3</h3>
-                    <p>Short description of the project.</p>
-
                     <div class="view-project">
-                        <a class="project-link" href="#">View Project</a>
-                        <a href="#" class="viewgit">
+                        <a class="project-link" target="_blank" href="https://github.com/ron4fun/pattern_finder">View
+                            Project</a>
+                        <!-- <a href="https://github.com/ron4fun/pattern_finder" target="_blank" class="viewgit">
                             <p>view on github</p>
                             <img src="assets/github.svg" alt="github" class="github">
-                        </a>
+                        </a> -->
 
                     </div>
 
@@ -347,7 +405,8 @@
 
                 <div class="contact-item">
                     <i class="contact-icon fab fa-github"></i>
-                    <a class="contact-detail" href="https://github.com/ron4fun" title="GitHub">GitHub/Ron4Fun</a>
+                    <a class="contact-detail" target="_blank" href="https://github.com/ron4fun"
+                        title="GitHub">GitHub/Ron4Fun</a>
                 </div>
 
 
@@ -361,7 +420,7 @@
 
                 <div class="contact-item">
                     <i class="contact-icon fab fa-linkedin"></i>
-                    <a class="contact-detail" href="https://www.linkedin.com/in/ronald-mbadiwe-123456789/"
+                    <a class="contact-detail" href="https://www.linkedin.com/in/ronald-Mbadiwe-123456789/"
                         title="LinkedIn">Ronald Mbadiwe</a>
                 </div>
 
@@ -379,12 +438,12 @@
     <hr>
     <footer>
 
-        <div class="scroll-to-top" id="scrollToTop">
-            <a href="#Home"><i class="fas fa-arrow-up"></i></a>
+        <div class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+            <a href="#Home" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
         </div>
 
 
-        <p>&copy; 2023 Ronald Mbadiwe. All rights reserved.</p>
+        <p>&copy; <span id="currentDate"></span> Ronald Mbadiwe. All rights reserved.</p>
         <p>Designed and Developed by Ronald Mbadiwe</p>
 
 

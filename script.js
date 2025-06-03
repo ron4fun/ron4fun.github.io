@@ -11,16 +11,18 @@ window.addEventListener('scroll', function() {
 
 
 
-function showSidebar(){
+function showSidebar(event){
+    if (event) event.preventDefault();
     const menu = document.querySelector('.menu');
     const close = document.querySelector('.close');
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = 'block';
     menu.style.opacity = '0';
     close.style.opacity = '1';
-}
+};
 
-function hideSidebar(){
+function hideSidebar(event){
+    if (event) event.preventDefault();
     const menu = document.querySelector('.menu');
     const close = document.querySelector('.close');
     const sidebar = document.querySelector('.sidebar');
@@ -28,4 +30,13 @@ function hideSidebar(){
     close.style.opacity = '0';
     menu.style.opacity = '1';
 
+};
+
+function notOnGit(event) {
+    if (event) event.preventDefault();
+    alert("This project was not featured on GitHub Pages. Please visit the website form 'View Project'.");
 }
+
+
+const currentYear = new Date().getFullYear();
+document.getElementById('currentDate').textContent = currentYear;
