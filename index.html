@@ -1,83 +1,403 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>My Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Web Engineer" />
+    <meta name="keywords" content="portfolio, Web Development, Programming" />
+    <title>Welcome </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="mediaquery.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
 </head>
+
 <body>
-  <header>
-    <nav>
-      <a href="/">Projects</a>
-      <a href="playground.html">Playground</a>
-      <a href="about.html">About</a>
-    </nav>
-  </header>
 
-  <main>
-    <div class="title">
-      <h4>FRANK MBADIWE</h4>
-      <h3>GRAPHIC DESIGNER</h3>
-      <h1>I'm an experienced <br>
-         brand designer and Ui <br>
-          designer.</h1>
-    </div>
+    <header>
+        <nav class="navbar">
 
-<div class="show">
+            <img src="assets/logo.png" alt="logo" class="logo">
 
 
+            <ul class="sidebar">
+
+                <li class="close" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffff">
+                            <path
+                                d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                        </svg></a></li>
+
+                <li><a href="#Home">Home</a></li>
+
+                <li><a href="#About">About</a></li>
+
+                <li><a href="#Stacks">Stacks</a></li>
+
+                <li><a href="#Projects">Projects</a></li>
+
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
 
 
-  <div class="s1">
-    <div class="s1t">
-      <h3><a href="project.html">Logo Title</a></h3>
-      <p>Brief Logo Description</p>
-    </div>
-  </div>
+
+            <ul class="nav-links">
+                <li class="hideOnMobile"><a href="#Home">Home</a></li>
+
+                <li class="hideOnMobile"><a href="#About">About</a></li>
+
+                <li class="hideOnMobile"><a href="#Stacks">Stacks</a></li>
+
+                <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
+
+                <li class="hideOnMobile"><a href="#Contact">Contact</a></li>
+
+                <li class=" menu hideOnBigScreen" onclick="showSidebar()"><a href="#"><svg
+                            xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                            fill="#ffff">
+                            <path
+                                d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                        </svg></a></li>
+            </ul>
+
+        </nav>
 
 
-  <div class="s1">
-    <div class="s1t">
-      <h3><a href="project.html">Logo Title</a></h3>
-      <p>Brief Logo Description</p>
-    </div>
-  </div>
+    </header>
 
-  <div class="s1">
-    <div class="s1t">
-      <h3><a href="project.html">Logo Title</a></h3>
-      <p>Brief Logo Description</p>
-    </div>
-  </div>
-
-
-  <div class="s1">
-    <div class="s1t">
-      <h3><a href="project.html">Logo Title</a></h3>
-      <p>Brief Logo Description</p>
-    </div>
-  </div>
-
-
-</div>
-
-
-    
-  </main>
+    <main>
 
 
 
 
-  <div class="footer">
-    <a href="/">Email</a>
-      <a href="/">LinkedIn</a>
-      <a href="/">Instagram</a> 
-  </div>
+        <section class="hero" id="Home">
 
-<footer>
-  &copy; 2025 By Frank Mbadiwe with Css Grid
-</footer>
+            <div class="hero-content">
+
+                <h1 class="intro-title hi">Hello</h1>
+                <h1 class="intro-title my-name">My name is</h1>
+                <h1 class="intro-title title-name">Ronald Mbadiwe</h1>
+                <h1 class="intro-title desc">I am Web Developer and Programmer</h1>
+
+                <a class="btn" href="#Contact">Contact Me</a>
+
+                <a class="btn" href="#Contact">Download CV</a>
+
+
+
+            </div>
+
+
+
+            <div class="hero-avater">
+                <img src="assets/avater.png" alt="Avater">
+            </div>
+
+        </section>
+
+
+        <section class="about" id="About">
+            <h2 class="section-title">About Me</h2>
+            <p>Engineer and self-taught software developer with a strong foundation in backend development,
+                cryptographic
+                libraries, and open-source contributions. I enjoy building practical, high-impact tools and exploring
+                how
+                code
+                can solve real-world problems. With a background in mechanical engineering and a deep interest in core
+                computing concepts, I’m now focused on expanding my knowledge in areas like algorithms, systems
+                architecture, and AI, while contributing to meaningful and technically challenging work.</p>
+
+            <a class="btn" href="#Contact">Contact Me</a>
+
+        </section>
+
+
+        <section class="stacks" id="Stacks">
+
+            <h2 class="section-title">My Stacks</h2>
+            <p class="section-subtitle">The Stacks i have been working with</p>
+
+            <div class="stacks-container">
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-cplusplus-plain colored"></i>
+                    <p>C++</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-csharp-plain colored"></i>
+                    <p>C#</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-python-plain colored"></i>
+
+                    <p>Python</p>
+                </div>
+
+                <div class="stack-item">
+
+                    <i class="stack-img devicon-javascript-plain colored"></i>
+
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-html5-plain colored"></i>
+                    <p>Html 5</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-jquery-plain colored"></i>
+                    <p>JQuery</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-django-plain colored"></i>
+                    <p>Django</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-react-original colored"></i>
+                    <p>React</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-nodejs-plain colored"></i>
+                    <p>Node.js</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-php-plain colored"></i>
+
+                    <p>php</p>
+                </div>
+
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-laravel-plain colored"></i>
+                    <p>Laravel</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-git-plain colored"></i>
+                    <p>Git</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-dot-net-plain colored"></i>
+                    <p>.Net</p>
+                </div>
+
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-mysql-plain colored"></i>
+                    <p>SQL</p>
+                </div>
+
+
+                <div class="stack-item">
+                    <i class="stack-img fas fa-code"></i>
+                    <p>Regex</p>
+                </div>
+
+                <div class="stack-item">
+                    <i class="stack-img devicon-dart-plain colored"></i>
+                    <p>Dart</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="projects" id="Projects">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Here are some of the things i have built</p>
+
+            <div class="projects-container">
+
+                <div class="project-item">
+
+                    <div class="img-card">
+                        <img class="project-image" src="assets/project.png" alt="Project 1" />
+                    </div>
+
+                    <h3>SharpHash</h3>
+                    <p>SharpHash is a C# hashing library which provides an easy to use interface for computing hashes
+                        and checksums of data. It
+                        also supports state based (incremental) hashing.
+                    </p>
+
+                    <div class="view-project">
+                        <a class="project-link" href="#">View Project</a>
+
+                        <a href="#" class="viewgit">
+                            <p>view on github</p>
+                            <img src="assets/github.svg" alt="github" class="github">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="project-item">
+
+                    <div class="img-card">
+                        <img class="project-image" src="assets/project.png" alt="Project 1" />
+                    </div>
+
+                    <h3>HashLibPlus</h3>
+                    <p>This is a recommended C++11 hashing library that provides a fluent interface for computing hashes
+                        and checksums
+                        of strings, files, streams, bytearrays and untyped data to mention but a few.</p>
+
+                    <div class="view-project">
+                        <a class="project-link" href="#">View Project</a>
+
+                        <a href="#" class="viewgit">
+                            <p>view on github</p>
+                            <img src="assets/github.svg" alt="github" class="github">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="project-item">
+
+                    <div class="img-card">
+                        <img class="project-image" src="assets/Jobbernaija.jpg" alt="Project 1" />
+                    </div>
+
+
+                    <h3>job board website</h3>
+                    <p>A modern job board website built using Python and the Django framework, featuring user
+                        authentication, job posting, search functionality, and an intuitive interface for both employers
+                        and job seekers.</p>
+
+                    <div class="view-project">
+                        <a class="project-link" href="#">View Project</a>
+                        <a href="#" class="viewgit">
+                            <p>view on github</p>
+                            <img src="assets/github.svg" alt="github" class="github">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="project-item">
+
+                    <div class="img-card">
+                        <img class="project-image" src="assets/project.png" alt="Project 1" />
+                    </div>
+
+
+                    <h3>Project Title 3</h3>
+                    <p>Short description of the project.</p>
+
+                    <div class="view-project">
+                        <a class="project-link" href="#">View Project</a>
+                        <a href="#" class="viewgit">
+                            <p>view on github</p>
+                            <img src="assets/github.svg" alt="github" class="github">
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="contact" id="Contact">
+
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">Feel free to reach out for collaborations or inquiries.</p>
+
+            <div class="contact-box">
+
+                <div class="contact-item">
+                    <i class="contact-icon fas fa-envelope"></i>
+                    <a class="contact-detail" href="mailto:Ron4fun@gmail.com" title="Email">Ron4fun@gmail.com</a>
+                </div>
+
+
+                <div class="contact-item">
+                    <i class="contact-icon fab fa-github"></i>
+                    <a class="contact-detail" href="https://github.com/ron4fun" title="GitHub">GitHub/Ron4Fun</a>
+                </div>
+
+
+
+                <div class="contact-item">
+                    <i class="contact-icon fas fa-phone"></i>
+                    <a class="contact-detail" href="tel:+2349167761821" title="Phone">+234 916 776 1821</a>
+                </div>
+
+
+
+                <div class="contact-item">
+                    <i class="contact-icon fab fa-linkedin"></i>
+                    <a class="contact-detail" href="https://www.linkedin.com/in/ronald-mbadiwe-123456789/"
+                        title="LinkedIn">Ronald Mbadiwe</a>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <hr>
+    <footer>
+
+        <div class="scroll-to-top" id="scrollToTop">
+            <a href="#Home"><i class="fas fa-arrow-up"></i></a>
+        </div>
+
+
+        <p>&copy; 2023 Ronald Mbadiwe. All rights reserved.</p>
+        <p>Designed and Developed by Ronald Mbadiwe</p>
+
+
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+
+
+
+
 
 </body>
 

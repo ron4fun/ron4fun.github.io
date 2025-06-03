@@ -1,0 +1,257 @@
+@media(max-width: 1150px) {
+
+    .hero-avater img {
+        width: 300px;
+    }
+
+}
+
+
+@media(max-width: 1050px) {
+
+    .title-name {
+        font-size: 65px;
+    }
+
+
+    .hi {
+        font-size: 30px;
+    }
+
+
+    .my-name {
+        font-size: 30px;
+    }
+
+    .desc {
+        font-size: 24px;
+    }
+
+    .btn {
+        padding: 15px 40px;
+        font-size: 15px;
+    }
+
+
+}
+
+
+
+
+@media(max-width: 930px) {
+
+    .hero-avater img {
+        width: 250px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 915px) {
+
+    .hideOnMobile {
+        display: none;
+        list-style: none;
+    }
+
+    .menu {
+        opacity: 1;
+    }
+
+    .navbar {
+        padding: 5px 50px;
+    }
+
+    .hero-avater img {
+        width: 150px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media(max-width: 765px) {
+
+    .hero-avater {
+        position: relative;
+    }
+
+
+    .hero-avater img {
+        position: absolute;
+        left: -160px;
+        top: -239px;
+        right: 20px;
+        bottom: 20px;
+        width: 150px;
+        height: auto;
+        transition: width 0.3s, left 0.3s, right 0.3s, top 0.3s, bottom 0.3s;
+        transition: width 0.3s;
+    }
+
+}
+
+
+@media(max-width: 600px) {
+
+
+    .navbar {
+        padding: 5px 25px;
+    }
+
+
+    .title-name {
+        font-size: 45px;
+    }
+
+
+    .hi,
+    .my-name {
+        font-size: 20px;
+    }
+
+
+    .desc {
+        font-size: 16px;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        font-size: 12px;
+    }
+
+
+    body {
+        font-size: 12px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+
+    .about p {
+        font-size: 14px;
+        margin: 10px 0 0 0;
+    }
+
+
+    .stack-img {
+        font-size: 40px;
+    }
+
+    .project-item h3 {
+        font-size: 20px;
+    }
+
+    .project-link {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 400px) {
+
+
+    body {
+        font-size: 12px;
+    }
+
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .title-name {
+        font-size: 35px;
+    }
+
+
+    .hi,
+    .my-name {
+        font-size: 20px;
+    }
+
+
+    .desc {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 10px 12px;
+        font-size: 10px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+
+    .about p {
+        font-size: 12px;
+        margin: 10px 0 0 0;
+    }
+
+
+    .stack-img {
+        font-size: 40px;
+    }
+
+    .project-item h3 {
+        font-size: 20px;
+    }
+
+    .project-link {
+        font-size: 12px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width: 915px) {
+
+    .hideOnBigScreen {
+        display: none;
+    }
+}
